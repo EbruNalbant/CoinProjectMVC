@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* base codes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+  font-family: "poppins";
+  overflow-x: hidden;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: goldenrod;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto goldenrod;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 28px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #1a1a1a;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 8px 16px 10px 16px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/* container */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 40px;
+}
+/* logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  gap: 20px;
+  h2 {
+    font-weight: normal;
+  }
+  img {
+    width: 60px;
+  }
+}
+
+/* form field */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+
+  div {
+    position: relative;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 5px;
+      border: none;
+      &:focus {
+        outline: 1px solid rgb(87, 36, 87);
+      }
+    }
+    span {
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      color: rgb(125, 16, 16);
+    }
+  }
+
+  button {
+    color: white;
+    background: #242424;
+    &:disabled {
+      background: rgb(62, 59, 59);
+    }
+  }
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  .c-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    img {
+      width: 3rem;
+    }
+  }
+  .links {
+    display: flex;
+    gap: 1.8rem;
+    a {
+      color: goldenrod;
+    }
+  }
+  .active {
+    text-shadow: 0 0 1rem goldenrod;
+  }
+}
+
+/* up & down classes for changePercent24Hr */
+.up {
+  color: green !important;
+}
+
+.down {
+  color: red !important;
+}
+
+/* cards */
+.cardd {
+  transition: all 0.3s;
+}
+
+.cardd:hover {
+  cursor: pointer;
+  transform: translate(10px, -10px);
+  box-shadow: 0 0 30px #e0e8ef8a;
+}
+
+/* table */
+table tr {
+  cursor: pointer;
+}
